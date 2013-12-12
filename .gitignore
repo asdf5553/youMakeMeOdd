@@ -1,6 +1,22 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
+public int [] youMakeMeOdd(int [] arr)
+{
+  int count=0;
+  for (int x=0; x<arr.length; x++)
+  {
+    if ((arr[x]%2)==1)
+    {
+      count++;
+    }
+  }
+  int[] solution = new int[count];
+  int index=0;
+  for (int x=0; x<arr.length; x++)
+  {
+    if ((arr[x]%2)==1)
+    {
+      solution[index]= arr[x];
+      index++;
+    }
+    }
+    return solution;
+}
